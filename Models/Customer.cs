@@ -16,4 +16,5 @@ namespace Vidly.Models
         public MembershipType MembershipType { get; set; } // navigation property: navigate from one type to another
         public byte MembershipTypeId { get; set; }
     }
+
 }
