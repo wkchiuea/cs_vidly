@@ -1,29 +1,35 @@
-﻿@model Vidly.ViewModels.CustomerFormViewModel
+﻿@model IEnumerable<Vidly.Models.Customer>
 
 @{
-    ViewBag.Title = "Customers";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+                /**/
+
+                ViewBag.Title = "Customers";
+                Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Customers</h2>
 
 
-@if (@Model.Customers.Count == 0)
+@if (!Model.Any())
 {
-    <text>We don't have any customers yet.</text>
+    <p>We don't have any customers yet.</p>
 }
 else
 {
     <table class="table table-bordered table-hover">
-        <tr>
-            <th>Movie</th>
-        </tr>
-        @foreach (var customer in @Model.Customers)
-        {
+        <thead>
             <tr>
-                <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id}, null)</td>
+                <th>Customer</th>
             </tr>
-        }
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+                </tr>
+            }
+        </tbody>
     </table>
 }
 
