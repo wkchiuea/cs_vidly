@@ -35,9 +35,26 @@ namespace Vidly.Controllers
 		}
 
 		[HttpPost]
-		public ActionResult Create(Customer customer)
+		public ActionResult Save(Customer customer)
 		{
+			if (customer.Id == 0)
+				_context.Customers.Add(customer);
+			else
+			{
+				var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+
+				//TryUpdateModel(customerInDb, "", new string[] { "Name", "Email" }); // not good approach
+				// Mapper.Map(customer, customerInDb); // auto mapper library
+				customerInDb.Name = customer.Name;
+				customerInDb.Birthdate = customer.Birthdate;
+				customerInDb.MembershipTypeId = customer.MembershipTypeId;
+				customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+			}
+
 			_context.Customers.Add(customer);
+
+
+
 			_context.SaveChanges();
 
 			return RedirectToAction("Index", "Customers");
