@@ -158,3 +158,5 @@ C:\Development\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
 C:\Development\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
 C:\Development\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
 C:\Development\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddApplicationDbContext.resources
+C:\Development\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipName.resources
+C:\Development\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddCustomerBirthdate.resources

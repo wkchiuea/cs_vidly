@@ -145,6 +145,14 @@
     <Compile Include="Migrations\202205170305442_AddApplicationDbContext.designer.cs">
       <DependentUpon>202205170305442_AddApplicationDbContext.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205170317455_AddMembershipName.cs" />
+    <Compile Include="Migrations\202205170317455_AddMembershipName.designer.cs">
+      <DependentUpon>202205170317455_AddMembershipName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205170341055_AddCustomerBirthdate.cs" />
+    <Compile Include="Migrations\202205170341055_AddCustomerBirthdate.designer.cs">
+      <DependentUpon>202205170341055_AddCustomerBirthdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -221,6 +229,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205170305442_AddApplicationDbContext.resx">
       <DependentUpon>202205170305442_AddApplicationDbContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205170317455_AddMembershipName.resx">
+      <DependentUpon>202205170317455_AddMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205170341055_AddCustomerBirthdate.resx">
+      <DependentUpon>202205170341055_AddCustomerBirthdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
