@@ -37,13 +37,26 @@ namespace Vidly.Controllers
 		[HttpPost]
 		public ActionResult Save(Customer customer)
 		{
+			if (!ModelState.IsValid)
+			{
+				var viewModel = new CustomerFormViewModel
+				{
+					Customer = customer,
+					MembershipTypes = _context.MembershipTypes.ToList()
+				};
+				return View("CustomerForm", viewModel);
+			}
+
+
+
+
 			if (customer.Id == 0)
 				_context.Customers.Add(customer);
 			else
 			{
 				var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
 
-				//TryUpdateModel(customerInDb, "", new string[] { "Name", "Email" }); // not good approach
+				// TryUpdateModel(customerInDb, "", new string[] { "Name", "Email" }); // not good approach
 				// Mapper.Map(customer, customerInDb); // auto mapper library
 				customerInDb.Name = customer.Name;
 				customerInDb.Birthdate = customer.Birthdate;
