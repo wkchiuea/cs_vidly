@@ -182,3 +182,11 @@ C:\Users\cwklo\Documents\Development\Vidly\Vidly\obj\Debug\Vidly.Migrations.Upda
 C:\Users\cwklo\Documents\Development\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
 C:\Users\cwklo\Documents\Development\Vidly\Vidly\bin\AutoMapper.dll
 C:\Users\cwklo\Documents\Development\Vidly\Vidly\bin\AutoMapper.xml
+C:\Development\Vidly\Vidly\bin\AutoMapper.dll
+C:\Development\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Development\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Development\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Development\Vidly\Vidly\bin\AutoMapper.xml
+C:\Development\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Development\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Development\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
