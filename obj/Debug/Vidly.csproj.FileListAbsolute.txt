@@ -190,4 +190,3 @@ C:\Development\Vidly\Vidly\bin\AutoMapper.xml
 C:\Development\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
 C:\Development\Vidly\Vidly\bin\System.Web.Http.xml
 C:\Development\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
-C:\Users\cwklo\Documents\Development\Vidly\Vidly\obj\Debug\Vidly.Migrations.ReInit.resources
